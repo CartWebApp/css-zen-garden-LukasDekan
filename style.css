@@ -1,16 +1,12 @@
 /* Empty file for template. Remember to edit only this file and not the HTML file */
 @import url("https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Italiana&family=Julius+Sans+One&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Italiana&family=Julius+Sans+One&display=swap");
 p{
     font-family:'Inknut Antiqua'
 }
 
-.julius{
+h1{
     font-family:'Julius Sans One'
-}
-
-p.julius{
-    
 }
 
 
