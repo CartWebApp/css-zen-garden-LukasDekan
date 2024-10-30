@@ -5,13 +5,36 @@
     font-family:'Inknut Antiqua'
 } */
 
-h1{
-    font-family:'Julius Sans One'
+*{
+    background-color: var(--background-color);
 }
 
+:root{
+    --link-color_purple: rgb(36, 45, 224);
+    --link-color_black: black;
+    --text-color_yellow: rgb(255, 239, 176);
+    --background-color: rgb(223, 233, 255);
+}
+
+h1{
+    font-family:'Julius Sans One';
+    color: white;
+}
+
+header h2{
+    font-family:'Julius Sans One';
+    color: white;
+}
+    
 #zen-summary{
     font-family: 'Inknut Antiqua';
 }
+
+#zen-summary a{
+    font-family: 'Inknut Antiqua';
+    color:black;
+}
+
 
 a.design-name{
     font-family: 'Julius Sans One';
@@ -23,6 +46,7 @@ a.designer-name{
 
 #zen-preamble{
     font-family: 'Inknut Antiqua';
+    color: var(--text-color_yellow);
 }
 
 h3.select{
@@ -40,6 +64,52 @@ h3.select{
 p.benefits{
     font-family: 'Julius Sans One';
 }
+
+#zen-supporting{
+    font-family: 'Julius Sans One';
+    color:var(--link-color_purple)
+}
+
+#zen-participation{
+    font-family: 'Inknut Antiqua';
+    color: white;
+}
+
+#zen-participation a{
+    font-family: 'Inknut Antiqua';
+    color: white;
+}
+
+#zen-requirements{
+    font-family: 'Inknut Antiqua';
+    color: black;
+}
+#zen-requirements a{ 
+    font-family: 'Inknut Antiqua';
+    color: white;
+}
+
+#design-archives a{
+    font-family: 'Inknut Antiqua';
+    color: var(--link-color_black);
+}
+#zen-resources a{
+    font-family: 'Inknut Antiqua';  
+    color: var(--link-color_black);
+}
+
+footer a{
+    font-family: 'Inknut Antiqua';
+    color: black;
+}
+
+[role~=contentinfo]{
+    color:white;
+}
+
+
+
+
 
 
 
