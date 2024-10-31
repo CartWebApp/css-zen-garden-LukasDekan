@@ -14,21 +14,66 @@
     --link-color_black: black;
     --text-color_yellow: rgb(255, 239, 176);
     --background-color: rgb(223, 233, 255);
+    --title-color: rgb(104, 109, 213);
+}
+
+h3,p{
+    text-decoration: none;
 }
 
 h1{
     font-family:'Julius Sans One';
     color: white;
+    background-color: var(--title-color);
+    text-decoration: underline;
+    font-size: 48px;
 }
 
 header h2{
     font-family:'Julius Sans One';
     color: white;
+    background-color: var(--title-color);
+    font-size: 60px;
+    align-self: center;
 }
     
 #zen-summary{
     font-family: 'Inknut Antiqua';
 }
+
+
+
+
+
+
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!SUPER IMPORTANT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+[role=banner]{
+    font-family: 'Julius Sans One';
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background-color:var(--title-color);
+    border-radius: 1.5rem;
+    width: 80%;
+    height: 350px;
+    justify-self: center;
+}
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!SUPER IMPORTANT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+
+
+
+
+
+
+
+
+
 
 #zen-summary a{
     font-family: 'Inknut Antiqua';
@@ -53,9 +98,6 @@ h3.select{
     font-family: 'Julius Sans One';
 }
 
-.intro{
-    font-family: 'Julius Sans One';
-}
 
 #zen-benefits{
     font-family: 'Julius Sans One';
