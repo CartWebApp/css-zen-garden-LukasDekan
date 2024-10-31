@@ -5,6 +5,12 @@
     font-family:'Inknut Antiqua'
 } */
 
+
+/* images */
+@import url(C:\Users\702067344\Documents\GitHub\css-zen-garden-LukasDekan\images\greek-line.png);
+/* images */
+
+
 *{
     background-color: var(--background-color);
 }
@@ -15,10 +21,7 @@
     --text-color_yellow: rgb(255, 239, 176);
     --background-color: rgb(223, 233, 255);
     --title-color: rgb(104, 109, 213);
-}
-
-h3,p{
-    text-decoration: none;
+    --main-card-color: rgb(163, 167, 240);
 }
 
 h1{
@@ -40,6 +43,14 @@ header h2{
 #zen-summary{
     font-family: 'Inknut Antiqua';
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -75,18 +86,22 @@ header h2{
 
 
 
+
+
+
 #zen-summary a{
     font-family: 'Inknut Antiqua';
     color:black;
 }
 
-
 a.design-name{
     font-family: 'Julius Sans One';
+    background-color:var(--text-color_yellow);
 }
 
 a.designer-name{
     font-family: 'Julius Sans One';
+    background-color:var(--text-color_yellow);
 }
 
 #zen-preamble{
@@ -94,9 +109,14 @@ a.designer-name{
     color: var(--text-color_yellow);
 }
 
-h3.select{
+.select{
+    display: flex;
     font-family: 'Julius Sans One';
+    font-size: 50px;
+    justify-self: center;
+    background-color:var(--text-color_yellow);
 }
+
 
 
 #zen-benefits{
@@ -115,11 +135,24 @@ p.benefits{
 #zen-participation{
     font-family: 'Inknut Antiqua';
     color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background-color:var(--title-color);
+    border-radius: 1.5rem;
+    width: 80%;
+    height: 350px;
+    justify-self: center;
 }
+
 
 #zen-participation a{
     font-family: 'Inknut Antiqua';
     color: white;
+    background-color:var(--title-color);
+
 }
 
 #zen-requirements{
@@ -143,6 +176,20 @@ p.benefits{
 footer a{
     font-family: 'Inknut Antiqua';
     color: black;
+}
+
+.design-selection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background-color:var(--text-color_yellow);
+    border-radius: 1.5rem;
+    width: 20%;
+    height: 600px;
+    justify-self: flex-end;
+
+    font-size: x-large;
 }
 
 [role~=contentinfo]{
