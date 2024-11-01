@@ -7,21 +7,28 @@
 
 
 /* images */
-@import url(C:\Users\702067344\Documents\GitHub\css-zen-garden-LukasDekan\images\greek-line.png);
+
 /* images */
 
 
-*{
-    background-color: var(--background-color);
-}
+
 
 :root{
-    --link-color_purple: rgb(36, 45, 224);
+    --link-color_purple: rgb(36, 45, 224);  
     --link-color_black: black;
     --text-color_yellow: rgb(255, 239, 176);
     --background-color: rgb(223, 233, 255);
     --title-color: rgb(104, 109, 213);
     --main-card-color: rgb(163, 167, 240);
+    background-color: var(--background-color);
+}
+
+body{
+    display: flex;
+    align-items: center;
+    padding: 4rem;
+    width: 100%;
+    background-color: var(--main-card-color);
 }
 
 h1{
@@ -44,6 +51,19 @@ header h2{
     font-family: 'Inknut Antiqua';
 }
 
+[role="banner"]::after{
+    position: relative;
+    left: 0%;
+    top: 70px;
+    content: url(images/greek-line.png);
+}
+
+#zen-preamble::before{
+    position: relative;
+    left: 0%;
+    top: 70px;
+    content: url(images/better-greek-design.png);
+}
 
 
 
@@ -59,7 +79,21 @@ header h2{
 
 
 
-/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!SUPER IMPORTANT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!SUPER IMPORTANT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 [role=banner]{
     font-family: 'Julius Sans One';
 
@@ -73,7 +107,24 @@ header h2{
     height: 350px;
     justify-self: center;
 }
-/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!SUPER IMPORTANT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!SUPER IMPORTANT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -105,6 +156,15 @@ a.designer-name{
 }
 
 #zen-preamble{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background-color:var(--title-color);
+    border-radius: 1.5rem;
+    width: 28%;
+    justify-self: flex-start;
     font-family: 'Inknut Antiqua';
     color: var(--text-color_yellow);
 }
@@ -143,7 +203,6 @@ p.benefits{
     background-color:var(--title-color);
     border-radius: 1.5rem;
     width: 80%;
-    height: 350px;
     justify-self: center;
 }
 
@@ -195,10 +254,3 @@ footer a{
 [role~=contentinfo]{
     color:white;
 }
-
-
-
-
-
-
-
