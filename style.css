@@ -148,17 +148,6 @@ p.benefits{
 }
 
 
-#zen-participation a{
-    font-family: 'Inknut Antiqua';
-    color: white;
-    background-color:var(--title-color);
-
-}
-
-#zen-requirements{
-    font-family: 'Inknut Antiqua';
-    color: black;
-}
 #zen-requirements a{ 
     font-family: 'Inknut Antiqua';
     color: white;
