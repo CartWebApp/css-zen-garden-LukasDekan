@@ -52,7 +52,7 @@ header h2{
 }
 
 [role="banner"]::after{
-    position: relative;
+    position: inherit;
     left: 0%;
     top: 70px;
     content: url(images/greek-line.png);
@@ -158,13 +158,15 @@ a.designer-name{
 #zen-preamble{
 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items:center;
+    flex-wrap: wrap;
+    align-content:center;
     background-color:var(--title-color);
     border-radius: 1.5rem;
-    width: 28%;
-    justify-self: flex-start;
+    width: 64%;
+    justify-self: center;
     font-family: 'Inknut Antiqua';
     color: var(--text-color_yellow);
 }
@@ -180,6 +182,16 @@ a.designer-name{
 
 
 #zen-benefits{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items:center;
+    background-color:var(--background-color);
+    color: black;
+    border-radius: 0rem;
+    width: 80%;
+    justify-self: flex-start;
     font-family: 'Julius Sans One';
 }
 
@@ -190,6 +202,25 @@ p.benefits{
 #zen-supporting{
     font-family: 'Julius Sans One';
     color:var(--link-color_purple)
+}
+
+a:visited{
+    background-color: blue;
+}
+
+p:last-child{
+    color: inherit; 
+}
+
+#zen-explanation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    border-radius: 1.5rem;
+    width: 80%;
+    justify-self: center;
+    background-color: var(--text-color_yellow);
 }
 
 #zen-participation{
@@ -208,17 +239,67 @@ p.benefits{
 
 
 
+section:only-of-type{
+    color: white;
+}
+
+a:only-child{
+    font-size:small;
+}
+
+:not(a, h1, h2, h3){
+    text-decoration: none;
+}
 
 a:link{
     background-color: var(--text-color_yellow);
 }
 
-
 a:hover{
     color:aqua;
 }
 
-p, a{
+h1, h2, h3{
+    font-style: italic;
+}
+
+div>p{
+    font-style:inherit;
+}
+
+p:nth-last-child(1){
+    font-style: inherit;
+}
+
+p:nth-last-of-type(2){
+    font-style: inherit;
+}
+
+p:nth-child(1){
+    font-style: inherit;
+}
+
+p:first-child{
+    font-style: inherit;
+}
+
+p::first-letter{
+    font-size: x-large;
+}
+
+p::first-line{
+    text-decoration: inherit;
+}
+
+[role]{ 
+    padding:0%;
+}
+
+a~body{
+    text-decoration: dotted;
+}
+
+a{
     text-decoration: underline;
 }
 
@@ -230,6 +311,35 @@ p::selection{
 #zen-requirements a{ 
     font-family: 'Inknut Antiqua';
     color: white;
+}
+
+#zen-requirements{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background-color:var(--text-color_yellow);
+    color: black;
+    border-radius: 1.5rem;
+    width: 80%;
+    justify-self: center;       
+}
+
+p:empty{
+    font-size: medium;
+}
+
+
+[role="contentinfo"]{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    align-content: flex-end;
+    background-color:var(--title-color);
+    border-radius: 1.5rem;
+    width: 80%;
+    justify-self: center;
 }
 
 #design-archives a{
@@ -249,15 +359,67 @@ footer a{
 .design-selection{
     display: flex;
 
+    position: relative;
     flex-direction: column;
-    justify-content: center;
-    align-items:center;
+    justify-content: flex-end;
+    align-items:flex-end;
     background-color:var(--text-color_yellow);
     border-radius: 1.5rem;
     width: 20%;
     justify-self: flex-end;
 
     font-size: x-large;
+}
+
+.zen-resources::after{
+    content: url(/images/better-greek-design.png);
+    width: 80%;
+}
+
+p:first-of-type{
+    font-style: italic;
+}
+
+.summary .zen-resources{
+    text-decoration: inherit;
+}
+
+.intro.main_supporting{
+    text-decoration: inherit;
+}
+
+div > p{
+    text-decoration: inherit;
+}
+
+div + p{
+    font-style: inherit;
+}
+
+li ~ ul{
+    font-style:inherit;
+}
+
+[role|=contentinfo]{
+    color:inherit;
+}
+
+a:active{
+    background-color: aqua;
+}
+
+a[href^="https"]{
+    color: aqua;
+}
+
+a[href$=".com"]{
+    color: inherit;
+}
+
+a[href*="mezzoblue"]
+
+:focus{
+    color: inherit;
 }
 
 [role~=contentinfo]{
