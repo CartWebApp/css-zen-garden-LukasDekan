@@ -207,15 +207,16 @@ p.benefits{
 }
 
 
-a:hover{
-    color:aqua;
-}
+
 
 a:link{
     background-color: var(--text-color_yellow);
 }
 
 
+a:hover{
+    color:aqua;
+}
 
 p, a{
     text-decoration: underline;
