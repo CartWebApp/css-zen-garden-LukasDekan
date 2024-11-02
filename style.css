@@ -61,7 +61,7 @@ header h2{
 #zen-preamble::before{
     position: relative;
     left: 0%;
-    top: 70px;
+    top: -3px;
     content: url(images/better-greek-design.png);
 }
 
@@ -207,6 +207,25 @@ p.benefits{
 }
 
 
+a:hover{
+    color:aqua;
+}
+
+a:link{
+    background-color: var(--text-color_yellow);
+}
+
+
+
+p, a{
+    text-decoration: underline;
+}
+
+p::selection{
+    background-color: var(--text-color_yellow);
+    color: black;
+}
+
 #zen-requirements a{ 
     font-family: 'Inknut Antiqua';
     color: white;
@@ -228,13 +247,13 @@ footer a{
 
 .design-selection{
     display: flex;
+
     flex-direction: column;
     justify-content: center;
     align-items:center;
     background-color:var(--text-color_yellow);
     border-radius: 1.5rem;
     width: 20%;
-    height: 600px;
     justify-self: flex-end;
 
     font-size: x-large;
